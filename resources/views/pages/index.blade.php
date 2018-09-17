@@ -239,7 +239,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="featured-btn-wrap">
-                        <a href="#" class="btn btn-danger">VIEW ALL</a>
+                        <a href="/listing" class="btn btn-danger">VIEW ALL</a>
                     </div>
                 </div>
             </div>
@@ -443,7 +443,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="featured-btn-wrap">
-                        <a href="#" class="btn btn-danger"><span class="ti-plus"></span> ADD LISTING</a>
+                        <a href="/home" class="btn btn-danger"><span class="ti-plus"></span> ADD LISTING</a>
                     </div>
                 </div>
             </div>

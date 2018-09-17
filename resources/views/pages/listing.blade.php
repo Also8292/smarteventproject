@@ -101,7 +101,7 @@
                     <div class="row light-bg detail-options-wrap">
                         <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
                             <div class="featured-place-wrap">
-                                <a href="detail.html">
+                                <a href="/detail">
                                     <img src="images/featured1.jpg" class="img-fluid" alt="#">
                                     <span class="featured-rating-orange ">6.5</span>
                                     <div class="featured-title-box">
@@ -132,7 +132,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
                             <div class="featured-place-wrap">
-                                <a href="detail.html">
+                                <a href="/detail">
                                     <img src="images/featured2.jpg" class="img-fluid" alt="#">
                                     <span class="featured-rating-green">9.5</span>
                                     <div class="featured-title-box">
@@ -164,7 +164,7 @@
 
                         <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
                             <div class="featured-place-wrap">
-                                <a href="detail.html">
+                                <a href="/detail">
                                     <img src="images/featured3.jpg" class="img-fluid" alt="#">
                                     <span class="featured-rating">3.2</span>
                                     <div class="featured-title-box">
@@ -195,7 +195,7 @@
                         </div>
                         <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
                             <div class="featured-place-wrap">
-                                <a href="detail.html">
+                                <a href="/detail">
                                     <img src="images/featured4.jpg" class="img-fluid" alt="#">
                                     <span class="featured-rating-green">9.5</span>
                                     <div class="featured-title-box">
