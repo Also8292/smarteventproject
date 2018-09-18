@@ -11,7 +11,7 @@
 
                 <div class="swiper-slide">
                     <a href="images/reserve-slide2.jpg" class="grid image-link">
-                        <img src="images/reserve-slide2.jpg" class="img-fluid" alt="#">
+                        <img src="images/reserve-slide1.jpg" class="img-fluid" alt="#">
                     </a>
                 </div>
                 <div class="swiper-slide">
