@@ -19,7 +19,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Welcome {{ Auth::user()->name }}
                 </div>
                 <div>
                     @if(count($event) > 0)

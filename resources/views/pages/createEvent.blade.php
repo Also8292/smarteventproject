@@ -1,4 +1,34 @@
-@extends('layouts.app')
+@extends('layouts.template')
+
+@section('title', 'Add event')
+
+@section('style')
+
+    <!-- add event style CSS -->
+    <link rel="stylesheet" href="{{ asset('../css/addEventStyle.css') }}">
+
+@endsection
+
+@section('header')
+
+    <div class="nav-menu">
+        <div class="bg transition">
+            <div class="container-fluid fixed header">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="/home">Home</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-menu"></span>
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@endsection
 
     @section('content')
     @if (!Auth::guest())
@@ -19,8 +49,8 @@
                 <br>
                 <textarea class="form-control" name="description" id="description" placeholder="Event description" required></textarea>
                 <br>
-                <button type="submit" class="btn btn-primary">Create</button>
-                <button type="reset" class="btn btn-primary">Cancel</button>
+                <button type="submit" id="createBtn" class="btn btn-primary">Create</button>
+                <button type="reset" id="cancelBtn" class="btn btn-primary">Cancel</button>
             </form>
         </div>
 
