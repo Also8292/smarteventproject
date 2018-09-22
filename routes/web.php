@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('pages/index');
 });
 
-Route::get('/detail', function () {
+Route::get('/detail', function() {
     return view('pages/detail');
 });
 
-Route::get('/listing', function () {
+Route::get('/listing', function() {
     return view('pages/listing');
 });
 
@@ -27,3 +27,11 @@ Route::get('/listing', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/events', 'EventController@index');
+
+Route::get('/createEvent', function() {
+    return view('pages/createEvent');
+});
+
+Route::post('/insertevent', 'EventController@addEvent');

@@ -22,6 +22,7 @@ class CreateEventsTable extends Migration
             $table->string('location');
             $table->integer('ticket');
             $table->integer('user')->index();
+            $table->timestamps();
         });
     }
 
