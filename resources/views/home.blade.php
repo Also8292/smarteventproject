@@ -10,23 +10,103 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    Welcome {{ Auth::user()->name }}
-                </div>
+                
                 <div>
                     @if(count($event) > 0)
 
                     @foreach($event->all() as $events)
 
-                    <h3>{{$events->title}} / {{$events->description}} / {{$events->ticket}}</h3>
+                    <div class="container-fluid">
+                        <div id="event_container" class="container row">
+                            <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <a href="" class="event_link" title="see details">
+                                    <div class="event">
+                                        <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
+                                        <span class="ticket_price">10</span>
+                                        <h2>Title </h2>
+                                        <p><span>Categorie * View * $$$$$</span></p>
+                                        <p><i class="fa fa-map-marker"></i><span> Address </span></p>
+                                        <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
+                                        <p><i class="fa fa-link"></i><span> Web Site</span></p>
+                                        <p><span>Status</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <a href="" class="event_link" title="see details">
+                                    <div class="event">
+                                        <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
+                                        <span class="ticket_price">10</span>
+                                        <h2>Title </h2>
+                                        <p><span>Categorie * View * $$$$$</span></p>
+                                        <p><i class="fa fa-map-marker"></i><span> Address </span></p>
+                                        <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
+                                        <p><i class="fa fa-link"></i><span> Web Site</span></p>
+                                        <p><span>Status</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <a href="" class="event_link" title="see details">
+                                    <div class="event">
+                                        <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
+                                        <span class="ticket_price">10</span>
+                                        <h2>Title </h2>
+                                        <p><span>Categorie * View * $$$$$</span></p>
+                                        <p><i class="fa fa-map-marker"></i><span> Address </span></p>
+                                        <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
+                                        <p><i class="fa fa-link"></i><span> Web Site</span></p>
+                                        <p><span>Status</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <a href="" class="event_link" title="see details">
+                                    <div class="event">
+                                        <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
+                                        <span class="ticket_price">10</span>
+                                        <h2>Title </h2>
+                                        <p><span>Categorie * View * $$$$$</span></p>
+                                        <p><i class="fa fa-map-marker"></i><span> Address </span></p>
+                                        <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
+                                        <p><i class="fa fa-link"></i><span> Web Site</span></p>
+                                        <p><span>Status</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <a href="" class="event_link" title="see details">
+                                    <div class="event">
+                                        <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
+                                        <span class="ticket_price">10</span>
+                                        <h2>Title </h2>
+                                        <p><span>Categorie * View * $$$$$</span></p>
+                                        <p><i class="fa fa-map-marker"></i><span> Address </span></p>
+                                        <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
+                                        <p><i class="fa fa-link"></i><span> Web Site</span></p>
+                                        <p><span>Status</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                <a href="" class="event_link" title="see details">
+                                    <div class="event">
+                                        <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
+                                        <span class="ticket_price">10</span>
+                                        <h2>Title </h2>
+                                        <p><span>Categorie * View * $$$$$</span></p>
+                                        <p><i class="fa fa-map-marker"></i><span> Address </span></p>
+                                        <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
+                                        <p><i class="fa fa-link"></i><span> Web Site</span></p>
+                                        <p><span>Status</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
 
                     @endforeach
 
