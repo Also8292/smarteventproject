@@ -22,10 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($user_id)
     {
-        $event = Event::all();
-        
+        $event = Event::all()->where('id', $user_id);
+
         return view('home', ['event' => $event]);
     }
 }
