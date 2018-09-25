@@ -8,7 +8,9 @@ use App\Event;
 class EventController extends Controller
 {
     public function index() {
-        return view('pages/listing');
+        $event = Event::all();
+
+        return view('pages/listing', ['event' => $event]);
     }
 
     public function addEvent(Request $request) {
