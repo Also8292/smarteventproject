@@ -23,7 +23,6 @@ Route::get('/listing', function() {
     return view('pages/listing');
 });
 
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

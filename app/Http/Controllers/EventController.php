@@ -4,12 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Event;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
     public function index() {
         $event = Event::all();
-
         return view('pages/listing', ['event' => $event]);
     }
 
@@ -30,7 +30,9 @@ class EventController extends Controller
         $event->location = $request->input('location');
         $event->ticket = $request->input('ticket');
         $event->description = $request->input('description');
+        $event->user = Auth::id();
         $event->save();
+        
         return redirect('/home')->with('info', 'Event added successfully !');
     }
 }

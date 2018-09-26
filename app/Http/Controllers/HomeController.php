@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Event;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -22,10 +23,14 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index($user_id)
+    public function index()
     {
-        $event = Event::all()->where('id', $user_id);
+        $event = Event::all()->where('user', Auth::id());
 
         return view('home', ['event' => $event]);
+    }
+
+    public function get_user() {
+        return $this->middleware('auth');
     }
 }
