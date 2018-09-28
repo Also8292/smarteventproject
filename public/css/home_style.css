@@ -15,6 +15,10 @@
     background-color: #ececec;
 }
 
+.event_div a h2 {
+    color: blue;
+}
+
 .event{
     display:block;
     overflow:hidden;
@@ -52,3 +56,6 @@ span.ticket_price{
     background-color:#ff0000;
 }
 
+.event_div a:hover h2 {
+    text-decoration: none;
+}

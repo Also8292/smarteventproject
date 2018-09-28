@@ -31,8 +31,16 @@ class EventController extends Controller
         $event->ticket = $request->input('ticket');
         $event->description = $request->input('description');
         $event->user = Auth::id();
-        $event->save();
-        
-        return redirect('/home')->with('info', 'Event added successfully !');
+
+        if($event->opening < $event->closing) {
+            $event->save();
+            return redirect('/home')->with('info', 'Event added successfully !');
+        }
+
+        else{
+            return redirect('/createEvent')->with('info', 'Incorrect opening and closing !');
+        }
     }
+
+
 }

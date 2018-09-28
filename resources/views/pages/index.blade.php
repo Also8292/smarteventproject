@@ -45,7 +45,7 @@
                   </a>
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                             <a class="dropdown-item" href="{{ url('/listing') }}">Listing</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="{{ url('/home') }}">Login or SignUp</a>
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div>
                                     </li>

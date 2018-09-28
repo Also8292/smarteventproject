@@ -9,8 +9,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                
+            <div class="panel panel-default"> 
                 <div>
                     <div class="container-fluid">
                         <div id="event_container" class="container row">
@@ -19,7 +18,7 @@
                             @foreach($event->all() as $events)
 
                                     <div class="event_div col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                                        <a href="" class="event_link" title="see details">
+                                        <a href="/detail" class="event_link" title="see details">
                                             <div class="event">
                                                 <img src="images/reserve-slide2.jpg" alt="event picture" class="event_picture">
                                                 <span class="ticket_price">{{ $events->ticket}}</span>
@@ -29,6 +28,13 @@
                                                 <p><i class="fa fa-mobile-phone"></i><span> Phone </span></p>
                                                 <p><i class="fa fa-link"></i><span> Web Site</span></p>
                                                 <p><span>Status</span></p>
+                                                <p>Opening : <span>{{ $events->opening }}</span></p>
+                                                <p>Now : <span>{{ date("Y-m-d h:i:s") }}</span></p>
+                                                @if($events->closing <= date("Y-m-d h:i:s"))
+                                                    <span>Open</span>
+                                                @else
+                                                    <span>Close</span>
+                                                @endif
                                             </div>
                                         </a>
                                     </div>                            
